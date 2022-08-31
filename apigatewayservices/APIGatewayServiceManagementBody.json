@@ -82,55 +82,16 @@
         "operationId": "createAPI",
         "parameters": [
           {
-            "type": "file",
-            "x-example": "petstore.json",
-            "description": "Input swagger / raml / wsdl file to be imported",
-            "name": "file",
-            "in": "formData",
-            "required": true
-          },
-          {
-            "type": "string",
-            "x-example": "Swagger Petstore",
-            "description": "Name of the API",
-            "name": "apiName",
-            "in": "formData",
-            "required": true
-          },
-          {
-            "type": "string",
-            "x-example": "This is a sample server Petstore server",
-            "description": "Description of the API",
-            "name": "apiDescription",
-            "in": "formData"
-          },
-          {
-            "type": "string",
-            "x-example": "V1",
-            "description": "Version of the API",
-            "name": "apiVersion",
-            "in": "formData"
-          },
-          {
-            "enum": [
-              "swagger",
-              "raml",
-              "wsdl",
-              "openapi"
-            ],
-            "type": "string",
-            "x-example": "swagger",
-            "description": "Input file type",
-            "name": "type",
-            "in": "formData",
-            "required": true
-          },
-          {
-            "type": "string",
-            "x-example": "mainFile.wsdl",
-            "description": "Name of the main file in the zip. Required only when the input file is zip format",
-            "name": "rootFileName",
-            "in": "formData"
+            "x-examples": {
+              "application/json": "{\r\n            \"apiDefinition\": {\r\n                \"type\": \"rest\",\r\n                \"info\": {\r\n                    \"description\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n                    \"version\": \"1.0\",\r\n                    \"title\": \"ChuckNorrisAPI\"\r\n                },\r\n                \"host\": \"api.chucknorris.io\",\r\n                \"basePath\": \"/jokes\",\r\n                \"schemes\": [\r\n                    \"https\"\r\n                ],\r\n                \"security\": [],\r\n                \"paths\": {\r\n                    \"/random\": {\r\n                        \"get\": {\r\n                            \"summary\": \"GET\",\r\n                            \"description\": \"\",\r\n                            \"operationId\": \"GET\",\r\n                            \"produces\": [\r\n                                \"application/json\"\r\n                            ],\r\n                            \"responses\": {},\r\n                            \"enabled\": true\r\n                        },\r\n                        \"enabled\": true\r\n                    }\r\n                },\r\n                \"securityDefinitions\": {},\r\n                \"definitions\": {},\r\n                \"baseUriParameters\": [],\r\n                \"externalDocs\": [],\r\n                \"servers\": [\r\n                    {\r\n                        \"url\": \"https://api.chucknorris.io/jokes\"\r\n                    }\r\n                ],\r\n                \"components\": {\r\n                    \"schemas\": {}\r\n                }\r\n            },\r\n            \"nativeEndpoint\": [\r\n                {\r\n                    \"passSecurityHeaders\": true,\r\n                    \"uri\": \"https://api.chucknorris.io/jokes\",\r\n                    \"connectionTimeoutDuration\": 0,\r\n                    \"alias\": false\r\n                }\r\n            ],\r\n            \"apiName\": \"ChuckNorris\",\r\n            \"apiVersion\": \"1.0\",\r\n            \"apiDescription\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n            \"maturityState\": \"Beta\",\r\n            \"isActive\": false,\r\n            \"type\": \"REST\",\r\n            \"owner\": \"Administrator\",\r\n            \"policies\": [\r\n                \"08afbfa9-78e1-4c23-bb19-c0012464047e\"\r\n            ],\r\n            \"scopes\": [],\r\n            \"publishedPortals\": [],\r\n            \"creationDate\": \"2018-09-03 11:56:21 GMT\",\r\n            \"systemVersion\": 1,\r\n            \"id\": \"badc18e6-446f-4aa3-96cd-33e46bd40fb5\",\r\n           \r\n\t\"teams\": [\r\n\t\t{\r\n\t\t\t\"id\": \"Default\"\r\n\t\t}\r\n\t]\r\n     }"
+            },
+            "description": "API request payload",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/InputAPI"
+            }
           }
         ],
         "responses": {
@@ -289,55 +250,16 @@
             "in": "query"
           },
           {
-            "type": "file",
-            "x-example": "petstore.json",
-            "description": "Input swagger / raml / wsdl file",
-            "name": "file",
-            "in": "formData",
-            "required": true
-          },
-          {
-            "type": "string",
-            "x-example": "Swagger Petstore",
-            "description": "Name of the API",
-            "name": "apiName",
-            "in": "formData",
-            "required": true
-          },
-          {
-            "type": "string",
-            "x-example": "This is a sample server Petstore server",
-            "description": "Description of the API",
-            "name": "apiDescription",
-            "in": "formData"
-          },
-          {
-            "type": "string",
-            "x-example": "V1",
-            "description": "Version of the API",
-            "name": "apiVersion",
-            "in": "formData"
-          },
-          {
-            "enum": [
-              "swagger",
-              "raml",
-              "wsdl",
-              "openapi"
-            ],
-            "type": "string",
-            "x-example": "swagger",
-            "description": "Input file type",
-            "name": "type",
-            "in": "formData",
-            "required": true
-          },
-          {
-            "type": "string",
-            "x-example": "mainFile.wsdl",
-            "description": "Name of the main file in the zip. Required when the input file is zip format",
-            "name": "rootFileName",
-            "in": "formData"
+            "x-examples": {
+              "application/json": "{\r\n            \"apiDefinition\": {\r\n                \"type\": \"rest\",\r\n                \"info\": {\r\n                    \"description\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n                    \"version\": \"1.0\",\r\n                    \"title\": \"ChuckNorrisAPI\"\r\n                },\r\n                \"host\": \"api.chucknorris.io\",\r\n                \"basePath\": \"/jokes\",\r\n                \"schemes\": [\r\n                    \"https\"\r\n                ],\r\n                \"security\": [],\r\n                \"paths\": {\r\n                    \"/random\": {\r\n                        \"get\": {\r\n                            \"summary\": \"GET\",\r\n                            \"description\": \"\",\r\n                            \"operationId\": \"GET\",\r\n                            \"produces\": [\r\n                                \"application/json\"\r\n                            ],\r\n                            \"responses\": {},\r\n                            \"enabled\": true\r\n                        },\r\n                        \"enabled\": true\r\n                    }\r\n                },\r\n                \"securityDefinitions\": {},\r\n                \"definitions\": {},\r\n                \"baseUriParameters\": [],\r\n                \"externalDocs\": [],\r\n                \"servers\": [\r\n                    {\r\n                        \"url\": \"https://api.chucknorris.io/jokes\"\r\n                    }\r\n                ],\r\n                \"components\": {\r\n                    \"schemas\": {}\r\n                }\r\n            },\r\n            \"nativeEndpoint\": [\r\n                {\r\n                    \"passSecurityHeaders\": true,\r\n                    \"uri\": \"https://api.chucknorris.io/jokes\",\r\n                    \"connectionTimeoutDuration\": 0,\r\n                    \"alias\": false\r\n                }\r\n            ],\r\n            \"apiName\": \"ChuckNorris\",\r\n            \"apiVersion\": \"1.0\",\r\n            \"apiDescription\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n            \"maturityState\": \"Beta\",\r\n            \"isActive\": false,\r\n            \"type\": \"REST\",\r\n            \"owner\": \"Administrator\",\r\n            \"policies\": [\r\n                \"08afbfa9-78e1-4c23-bb19-c0012464047e\"\r\n            ],\r\n            \"scopes\": [],\r\n            \"publishedPortals\": [],\r\n            \"creationDate\": \"2018-09-03 11:56:21 GMT\",\r\n            \"systemVersion\": 1,\r\n            \"id\": \"badc18e6-446f-4aa3-96cd-33e46bd40fb5\"\r\n        }"
+            },
+            "description": "API request payload",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/GatewayAPI"
+            }
           }
         ],
         "responses": {
@@ -1112,7 +1034,7 @@
           "200": {
             "description": "Returns the API versions",
             "schema": {
-              "$ref": "#/definitions/APIResponsesModel"
+              "$ref": "#/definitions/APIResponseGetAPIs"
             },
             "examples": {
               "application/json": "{\r\n    \"apiResponse\": {\r\n        \"api\": {\r\n            \"apiDefinition\": {\r\n                \"type\": \"rest\",\r\n                \"info\": {\r\n                    \"description\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n                    \"version\": \"1.0\",\r\n                    \"title\": \"ChuckNorrisAPI\"\r\n                },\r\n                \"host\": \"api.chucknorris.io\",\r\n                \"basePath\": \"/jokes\",\r\n                \"schemes\": [\r\n                    \"https\"\r\n                ],\r\n                \"security\": [],\r\n                \"paths\": {\r\n                    \"/random\": {\r\n                        \"get\": {\r\n                            \"summary\": \"GET\",\r\n                            \"description\": \"\",\r\n                            \"operationId\": \"GET\",\r\n                            \"produces\": [\r\n                                \"application/json\"\r\n                            ],\r\n                            \"responses\": {},\r\n                            \"enabled\": true\r\n                        },\r\n                        \"enabled\": true\r\n                    }\r\n                },\r\n                \"securityDefinitions\": {},\r\n                \"definitions\": {},\r\n                \"baseUriParameters\": [],\r\n                \"externalDocs\": [],\r\n                \"servers\": [\r\n                    {\r\n                        \"url\": \"https://api.chucknorris.io/jokes\"\r\n                    }\r\n                ],\r\n                \"components\": {\r\n                    \"schemas\": {}\r\n                }\r\n            },\r\n            \"nativeEndpoint\": [\r\n                {\r\n                    \"passSecurityHeaders\": true,\r\n                    \"uri\": \"https://api.chucknorris.io/jokes\",\r\n                    \"connectionTimeoutDuration\": 0,\r\n                    \"alias\": false\r\n                }\r\n            ],\r\n            \"apiName\": \"ChuckNorris\",\r\n            \"apiVersion\": \"1.0\",\r\n            \"apiDescription\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n            \"maturityState\": \"Beta\",\r\n            \"isActive\": false,\r\n            \"type\": \"REST\",\r\n            \"owner\": \"Administrator\",\r\n            \"policies\": [\r\n                \"08afbfa9-78e1-4c23-bb19-c0012464047e\"\r\n            ],\r\n            \"scopes\": [],\r\n            \"publishedPortals\": [],\r\n            \"creationDate\": \"2018-09-03 11:56:21 GMT\",\r\n            \"systemVersion\": 1,\r\n            \"id\": \"badc18e6-446f-4aa3-96cd-33e46bd40fb5\"\r\n        },\r\n        \"responseStatus\": \"SUCCESS\",\r\n        \"versions\": [\r\n            {\r\n                \"versionNumber\": \"1.0\",\r\n                \"apiId\": \"badc18e6-446f-4aa3-96cd-33e46bd40fb5\"\r\n            }\r\n        ]\r\n    }\r\n}"
@@ -1826,8 +1748,8 @@
       "description": "This model contains the basics details of an API.",
       "type": "object",
       "properties": {
-        "active": { 
-          "type": "boolean" 
+        "active": {
+          "type": "boolean"
         },
         "apiId": {
           "type": "string"
