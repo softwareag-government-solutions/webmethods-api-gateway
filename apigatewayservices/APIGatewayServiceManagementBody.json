@@ -203,7 +203,7 @@
           "200": {
             "description": "If the format is swagger, returns the swagger content in json and raml returns the raml content in yaml. If the format is openapi, returns the open api content in json. If the format is odata, you get a zip file holding the OData metadata and service document.",
             "schema": {
-              "$ref": "#/definitions/APIResponseGetAPI"
+              "$ref": "#/definitions/APIResponseGetAPIModel"
             },
             "examples": {
               "application/json": "{\r\n    \"apiResponse\": {\r\n        \"api\": {\r\n            \"apiDefinition\": {\r\n                \"type\": \"rest\",\r\n                \"info\": {\r\n                    \"description\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n                    \"version\": \"1.0\",\r\n                    \"title\": \"ChuckNorrisAPI\"\r\n                },\r\n                \"host\": \"api.chucknorris.io\",\r\n                \"basePath\": \"/jokes\",\r\n                \"schemes\": [\r\n                    \"https\"\r\n                ],\r\n                \"security\": [],\r\n                \"paths\": {\r\n                    \"/random\": {\r\n                        \"get\": {\r\n                            \"summary\": \"GET\",\r\n                            \"description\": \"\",\r\n                            \"operationId\": \"GET\",\r\n                            \"produces\": [\r\n                                \"application/json\"\r\n                            ],\r\n                            \"responses\": {},\r\n                            \"enabled\": true\r\n                        },\r\n                        \"enabled\": true\r\n                    }\r\n                },\r\n                \"securityDefinitions\": {},\r\n                \"definitions\": {},\r\n                \"baseUriParameters\": [],\r\n                \"externalDocs\": [],\r\n                \"servers\": [\r\n                    {\r\n                        \"url\": \"https://api.chucknorris.io/jokes\"\r\n                    }\r\n                ],\r\n                \"components\": {\r\n                    \"schemas\": {}\r\n                }\r\n            },\r\n            \"nativeEndpoint\": [\r\n                {\r\n                    \"passSecurityHeaders\": true,\r\n                    \"uri\": \"https://api.chucknorris.io/jokes\",\r\n                    \"connectionTimeoutDuration\": 0,\r\n                    \"alias\": false\r\n                }\r\n            ],\r\n            \"apiName\": \"ChuckNorris\",\r\n            \"apiVersion\": \"1.0\",\r\n            \"apiDescription\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n            \"maturityState\": \"Beta\",\r\n            \"isActive\": false,\r\n            \"type\": \"REST\",\r\n            \"owner\": \"Administrator\",\r\n            \"policies\": [\r\n                \"08afbfa9-78e1-4c23-bb19-c0012464047e\"\r\n            ],\r\n            \"scopes\": [],\r\n            \"publishedPortals\": [],\r\n            \"creationDate\": \"2018-09-03 11:56:21 GMT\",\r\n            \"systemVersion\": 1,\r\n            \"id\": \"badc18e6-446f-4aa3-96cd-33e46bd40fb5\"\r\n        },\r\n        \"responseStatus\": \"SUCCESS\",\r\n        \"versions\": [\r\n            {\r\n                \"versionNumber\": \"1.0\",\r\n                \"apiId\": \"badc18e6-446f-4aa3-96cd-33e46bd40fb5\"\r\n       \r\n       }\r\n        ],\r\n        \"teams\": [\r\n            {\r\n                \"id\": \"Administrators\",\r\n                \"name\": \"Administrators\",\r\n                \"canDelete\": \"false\"\r\n            },\r\n            {\r\n                \"id\": \"Default\",\r\n                \"name\": \"Default\",\r\n                \"canDelete\": \"true\"\r\n            }\r\n        ]    }\r\n}"
@@ -1034,7 +1034,7 @@
           "200": {
             "description": "Returns the API versions",
             "schema": {
-              "$ref": "#/definitions/APIResponseGetAPIs"
+              "$ref": "#/definitions/APIResponsesModel"
             },
             "examples": {
               "application/json": "{\r\n    \"apiResponse\": {\r\n        \"api\": {\r\n            \"apiDefinition\": {\r\n                \"type\": \"rest\",\r\n                \"info\": {\r\n                    \"description\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n                    \"version\": \"1.0\",\r\n                    \"title\": \"ChuckNorrisAPI\"\r\n                },\r\n                \"host\": \"api.chucknorris.io\",\r\n                \"basePath\": \"/jokes\",\r\n                \"schemes\": [\r\n                    \"https\"\r\n                ],\r\n                \"security\": [],\r\n                \"paths\": {\r\n                    \"/random\": {\r\n                        \"get\": {\r\n                            \"summary\": \"GET\",\r\n                            \"description\": \"\",\r\n                            \"operationId\": \"GET\",\r\n                            \"produces\": [\r\n                                \"application/json\"\r\n                            ],\r\n                            \"responses\": {},\r\n                            \"enabled\": true\r\n                        },\r\n                        \"enabled\": true\r\n                    }\r\n                },\r\n                \"securityDefinitions\": {},\r\n                \"definitions\": {},\r\n                \"baseUriParameters\": [],\r\n                \"externalDocs\": [],\r\n                \"servers\": [\r\n                    {\r\n                        \"url\": \"https://api.chucknorris.io/jokes\"\r\n                    }\r\n                ],\r\n                \"components\": {\r\n                    \"schemas\": {}\r\n                }\r\n            },\r\n            \"nativeEndpoint\": [\r\n                {\r\n                    \"passSecurityHeaders\": true,\r\n                    \"uri\": \"https://api.chucknorris.io/jokes\",\r\n                    \"connectionTimeoutDuration\": 0,\r\n                    \"alias\": false\r\n                }\r\n            ],\r\n            \"apiName\": \"ChuckNorris\",\r\n            \"apiVersion\": \"1.0\",\r\n            \"apiDescription\": \"Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris that have become an Internet phenomenon and as a result have become widespread in popular culture. The 'facts' are normally absurd hyperbolic claims about Norris' toughness, attitude, virility, sophistication, and masculinity.\",\r\n            \"maturityState\": \"Beta\",\r\n            \"isActive\": false,\r\n            \"type\": \"REST\",\r\n            \"owner\": \"Administrator\",\r\n            \"policies\": [\r\n                \"08afbfa9-78e1-4c23-bb19-c0012464047e\"\r\n            ],\r\n            \"scopes\": [],\r\n            \"publishedPortals\": [],\r\n            \"creationDate\": \"2018-09-03 11:56:21 GMT\",\r\n            \"systemVersion\": 1,\r\n            \"id\": \"badc18e6-446f-4aa3-96cd-33e46bd40fb5\"\r\n        },\r\n        \"responseStatus\": \"SUCCESS\",\r\n        \"versions\": [\r\n            {\r\n                \"versionNumber\": \"1.0\",\r\n                \"apiId\": \"badc18e6-446f-4aa3-96cd-33e46bd40fb5\"\r\n            }\r\n        ]\r\n    }\r\n}"
@@ -1708,6 +1708,15 @@
         }
       }
     },
+    "APIResponseGetAPIModel": {
+      "type": "object",
+      "description": "Response from getAPI",
+      "properties": {
+        "apiResponse": {
+          "$ref": "#/definitions/APIResponse"
+        }
+      }
+    },
     "APIResponseGetAPI": {
       "type": "object",
       "properties": {
@@ -1855,6 +1864,52 @@
         }
       }
     },
+    "AbstractParameter": {
+      "type": "object",
+      "properties": {
+        "allowEmptyValue": {
+          "description": "Sets the ability to pass empty-valued parameters. This is valid only for query parameters and allows sending a parameter with an empty value",
+          "type": "boolean"
+        },
+        "description": {
+          "description": "A brief description of the parameter. This could contain examples of use",
+          "type": "string"
+        },
+        "get$ref": {
+          "description": "The available paths and operations for the API",
+          "type": "string"
+        },
+        "in": {
+          "description": "The location of the parameter. Possible values are \"query\", \"header\", \"path\" or \"cookie\"",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the parameter. Parameter names are case sensitive",
+          "type": "string"
+        },
+        "required": {
+          "description": "Determines whether this parameter is mandatory. If the parameter location is \"path\", this property is REQUIRED and its value MUST be true. Otherwise, the property MAY be included and its default value is false",
+          "type": "boolean"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "ActionImport": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        }
+      }
+    },
     "Application": {
       "type": "object",
       "properties": {
@@ -1983,6 +2038,70 @@
         }
       }
     },
+    "ArrayModel": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Model"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/Property"
+            },
+            "maxItems": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "minItems": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      ]
+    },
+    "ArrayProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/Property"
+            },
+            "maxItems": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "minItems": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "uniqueItems": {
+              "type": "boolean"
+            }
+          }
+        }
+      ]
+    },
+    "ArraySchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Schema"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/Schema"
+            }
+          }
+        }
+      ]
+    },
     "AuthServerScope": {
       "description": "Represents the oauth scope from an authorization server",
       "type": "object",
@@ -2011,6 +2130,100 @@
         }
       }
     },
+    "BaseIntegerProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "exclusiveMaximum": {
+              "type": "boolean"
+            },
+            "exclusiveMinimum": {
+              "type": "boolean"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "minimum": {
+              "type": "number"
+            },
+            "multipleOf": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "BodyParameter": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Parameter"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/Model"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "BooleanProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "enum": {
+              "type": "array",
+              "items": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "BooleanSchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Schema"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "Callback": {
+      "type": "object",
+      "properties": {
+        "callbacksMap": {
+          "description": "A Path Item Object used to define a callback request and expected responses",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Path"
+          }
+        },
+        "get$ref": {
+          "type": "string"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
     "CommandInfo": {
       "type": "object",
       "properties": {
@@ -2021,6 +2234,212 @@
           "type": "string"
         }
       }
+    },
+    "Components": {
+      "type": "object",
+      "properties": {
+        "callbacks": {
+          "description": "An object to hold reusable callback objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Callback"
+          }
+        },
+        "examples": {
+          "description": "An object to hold reusable example objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Example"
+          }
+        },
+        "headers": {
+          "description": "An object to hold reusable header objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Header"
+          }
+        },
+        "links": {
+          "description": "An object to hold reusable link objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Link"
+          }
+        },
+        "parameters": {
+          "description": "An object to hold reusable parameter objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Parameter"
+          }
+        },
+        "requestBodies": {
+          "description": "An object to hold reusable requestBody objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/RequestBody"
+          }
+        },
+        "responses": {
+          "description": "An object to hold reusable response objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Response"
+          }
+        },
+        "schemas": {
+          "description": "An object to hold reusable schema objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Schema"
+          }
+        },
+        "securitySchemes": {
+          "description": "An object to hold reusable securityScheme objects",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/SecurityScheme"
+          }
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "ComposedModel": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Model"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "allOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Model"
+              }
+            },
+            "anyOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Model"
+              }
+            },
+            "child": {
+              "$ref": "#/definitions/Model"
+            },
+            "interfaces": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Model"
+              }
+            },
+            "oneOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Model"
+              }
+            },
+            "parent": {
+              "$ref": "#/definitions/Model"
+            }
+          }
+        }
+      ]
+    },
+    "ComposedProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "allOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Property"
+              }
+            },
+            "anyOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Property"
+              }
+            },
+            "oneOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Property"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ComposedSchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Schema"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "allOf": {
+              "description": "Must be valid against all of the subschemas",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Schema"
+              }
+            },
+            "anyOf": {
+              "description": "Must be valid against any of the subschemas",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Schema"
+              }
+            },
+            "oneOf": {
+              "description": "Must be valid against exactly one of the subschemas",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Schema"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Contact": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "description": "The email address of the contact person/organization",
+          "type": "string"
+        },
+        "name": {
+          "description": "The identifying name of the contact person/organization",
+          "type": "string"
+        },
+        "url": {
+          "description": "The URL pointing to the contact information",
+          "type": "string"
+        }
+      }
+    },
+    "CookieParameter": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Parameter"
+        },
+        {
+          "type": "object"
+        }
+      ]
     },
     "DataFlavor": {
       "type": "object",
@@ -2133,6 +2552,51 @@
         }
       }
     },
+    "DateTimeProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "enum": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DecimalProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "exclusiveMaximum": {
+              "type": "boolean"
+            },
+            "exclusiveMinimum": {
+              "type": "boolean"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "minimum": {
+              "type": "number"
+            },
+            "multipleOf": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
     "Endpoint": {
       "type": "object",
       "properties": {
@@ -2173,8 +2637,81 @@
         }
       }
     },
+    "EntitySet": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "EntityType": {
+      "type": "object",
+      "properties": {
+        "methods": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/MethodParameters"
+          }
+        },
+        "navigationProperties": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/EntitySet"
+          }
+        },
+        "properties": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
     "Enumeration": {
       "type": "object"
+    },
+    "Example": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "Long description for the example",
+          "type": "string"
+        },
+        "externalValue": {
+          "description": "A URL that points to the literal example. This provides the capability to reference examples that cannot easily be included in JSON or YAML documents. The value field and externalValue field are mutually exclusive",
+          "type": "string"
+        },
+        "get$ref": {
+          "type": "string"
+        },
+        "summary": {
+          "description": "Short description for the example",
+          "type": "string"
+        },
+        "value": {
+          "description": "Embedded literal example. The value field and externalValue field are mutually exclusive. To represent examples of media types that cannot naturally represented in JSON or YAML, use a string value to contain the example, escaping where necessary",
+          "type": "object"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
     },
     "ExternalDocs": {
       "type": "object",
@@ -2192,6 +2729,27 @@
           "additionalProperties": {
             "type": "object"
           }
+        }
+      }
+    },
+    "FormParameter": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Parameter"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "FunctionImport": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "function": {
+          "type": "string"
         }
       }
     },
@@ -2328,6 +2886,21 @@
         }
       }
     },
+    "GatewaySchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Schema"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
     "GatewayScope": {
       "description": "Maps the authorization server scope with APIs or API scopes",
       "type": "object",
@@ -2360,6 +2933,142 @@
         },
         "scopeName": {
           "description": "Name of the OAuth scope mapping",
+          "type": "string"
+        }
+      }
+    },
+    "Header": {
+      "type": "object",
+      "properties": {
+        "_enum": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowEmptyValue": {
+          "description": "Sets the ability to pass empty-valued parameters. This is valid only for query parameters and allows sending a parameter with an empty value",
+          "type": "boolean"
+        },
+        "allowReserved": {
+          "description": "Determines whether the parameter value SHOULD allow reserved characters, as defined by RFC3986 :/?#[]@!$\u0026'()*+,;= to be included without percent-encoding. This property only applies to parameters with an in value of query. The default value is false",
+          "type": "boolean"
+        },
+        "content": {
+          "description": "A map containing the representations for the parameter. The key is the media type and the value describes it. The map MUST only contain one entry",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/MediaType"
+          }
+        },
+        "default": {
+          "type": "string"
+        },
+        "deprecated": {
+          "description": "Determines whether this parameter is mandatory. If the parameter location is \"path\", this property is REQUIRED and its value MUST be true. Otherwise, the property MAY be included and its default value is false",
+          "type": "boolean"
+        },
+        "description": {
+          "description": "A brief description of the parameter. This could contain examples of use",
+          "type": "string"
+        },
+        "examples": {
+          "description": "Examples of the media type. Each example SHOULD contain a value in the correct format as specified in the parameter encoding. The examples field is mutually exclusive of the example field. Furthermore, if referencing a schema which contains an example, the examples value SHALL override the example provided by the schema",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Example"
+          }
+        },
+        "explode": {
+          "description": "When this is true, parameter values of type array or object generate separate parameters for each value of the array or key-value pair of the map. For other types of parameters this property has no effect. When style is form, the default value is true. For all other styles, the default value is false",
+          "type": "boolean"
+        },
+        "extendedExample": {
+          "description": "Example of the media type. The example SHOULD match the specified schema and encoding properties if present. The example field is mutually exclusive of the examples field. Furthermore, if referencing a schema which contains an example, the example value SHALL override the example provided by the schema. To represent examples of media types that cannot naturally be represented in JSON or YAML, a string value can contain the example with escaping where necessary",
+          "type": "object"
+        },
+        "get$ref": {
+          "description": "The available paths and operations for the API",
+          "type": "string"
+        },
+        "in": {
+          "description": "The location of the parameter. Possible values are \"query\", \"header\", \"path\" or \"cookie\"",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the parameter. Parameter names are case sensitive",
+          "type": "string"
+        },
+        "parameterSchema": {
+          "$ref": "#/definitions/Schema"
+        },
+        "required": {
+          "description": "Determines whether this parameter is mandatory. If the parameter location is \"path\", this property is REQUIRED and its value MUST be true. Otherwise, the property MAY be included and its default value is false",
+          "type": "boolean"
+        },
+        "style": {
+          "description": "Describes how the parameter value will be serialized depending on the type of the parameter value. Default values (based on value of in): for query - form; for path - simple; for header - simple; for cookie - form",
+          "type": "string",
+          "enum": [
+            "MATRIX",
+            "LABEL",
+            "FORM",
+            "SIMPLE",
+            "SPACEDELIMITED",
+            "PIPEDELIMITED",
+            "DEEPOBJECT"
+          ]
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "xpath": {
+          "$ref": "#/definitions/Xpath"
+        }
+      }
+    },
+    "HeaderParameter": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Parameter"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "Info": {
+      "type": "object",
+      "properties": {
+        "contact": {
+          "$ref": "#/definitions/Contact"
+        },
+        "description": {
+          "description": "A short description of the application",
+          "type": "string"
+        },
+        "license": {
+          "$ref": "#/definitions/Licence"
+        },
+        "termsOfService": {
+          "description": "A URL to the Terms of Service for the API",
+          "type": "string"
+        },
+        "title": {
+          "description": "The title of the application",
+          "type": "string"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "version": {
+          "description": "Version of the API",
           "type": "string"
         }
       }
@@ -2570,6 +3279,16 @@
         }
       }
     },
+    "IntegerSchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Schema"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
     "IntegrationServerPublishInfo": {
       "type": "object",
       "properties": {
@@ -2657,6 +3376,152 @@
         }
       }
     },
+    "Licence": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The license name used for the API",
+          "type": "string"
+        },
+        "url": {
+          "description": "A URL to the license used for the API",
+          "type": "string"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "Link": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "A description of the link",
+          "type": "string"
+        },
+        "get$ref": {
+          "type": "string"
+        },
+        "operationId": {
+          "description": "The name of an existing, resolvable OAS operation, as defined with a unique operationId. This field is mutually exclusive of the operationRef field",
+          "type": "string"
+        },
+        "operationRef": {
+          "description": "A relative or absolute reference to an OAS operation. This field is mutually exclusive of the operationId field, and MUST point to an Operation Object. Relative operationRef values MAY be used to locate an existing Operation Object in the API definition",
+          "type": "string"
+        },
+        "parameters": {
+          "description": "A map representing parameters to pass to an operation as specified with operationId or identified via operationRef. The key is the parameter name to be used, whereas the value can be a constant or an expression to be evaluated and passed to the linked operation. The parameter name can be qualified using the parameter location [{in}.]{name} for operations that use the same parameter name in different locations (e.g. path.id)",
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "requestBody": {
+          "description": "A literal value or {expression} to use as a request body when calling the target operation",
+          "type": "string"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "MapProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "additionalProperties": {
+              "$ref": "#/definitions/Property"
+            },
+            "maxProperties": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "minProperties": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      ]
+    },
+    "MediaType": {
+      "type": "object",
+      "properties": {
+        "example": {
+          "description": "Example of the media type. The example object SHOULD be in the correct format as specified by the media type. The example field is mutually exclusive of the examples field. Furthermore, if referencing a schema which contains an example, the example value SHALL override the example provided by the schema",
+          "type": "object"
+        },
+        "examples": {
+          "description": "Examples of the media type. Each example object SHOULD match the media type and specified schema if present. The examples field is mutually exclusive of the example field. Furthermore, if referencing a schema which contains an example, the examples value SHALL override the example provided by the schema",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Example"
+          }
+        },
+        "schema": {
+          "$ref": "#/definitions/Schema"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "MessageFrame": {
+      "type": "object",
+      "properties": {
+        "messageDescription": {
+          "type": "string"
+        },
+        "messagePayload": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string",
+          "enum": [
+            "Server",
+            "Client"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Binary",
+            "Text"
+          ]
+        }
+      }
+    },
+    "MethodParameters": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "returnType": {
+          "type": "string"
+        }
+      }
+    },
     "MockService": {
       "type": "object",
       "properties": {
@@ -2670,6 +3535,168 @@
           "type": "string"
         }
       }
+    },
+    "MockedCondition": {
+      "type": "object",
+      "properties": {
+        "conditionName": {
+          "type": "string"
+        },
+        "mockedConditionParameter": {
+          "type": "string",
+          "enum": [
+            "Body",
+            "Header",
+            "QueryParameter"
+          ]
+        },
+        "mockedLevel1Operator": {
+          "type": "string",
+          "enum": [
+            "Equals",
+            "NotEquals",
+            "ContainsKey",
+            "ContainsKeyValue"
+          ]
+        },
+        "mockedLevel2Operator": {
+          "type": "string",
+          "enum": [
+            "Equals",
+            "NotEquals",
+            "Contains",
+            "StartsWith",
+            "EndsWith"
+          ]
+        },
+        "value1": {
+          "type": "string"
+        },
+        "value2": {
+          "type": "string"
+        }
+      }
+    },
+    "MockedConditionsBasedCustomResponse": {
+      "type": "object",
+      "properties": {
+        "mockedConditionList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MockedCondition"
+          }
+        },
+        "mockedResponse": {
+          "$ref": "#/definitions/MockedResponse"
+        }
+      }
+    },
+    "MockedResponse": {
+      "type": "object",
+      "properties": {
+        "responseBody": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "responseHeaders": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "statusCode": {
+          "type": "string"
+        }
+      }
+    },
+    "Model": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "example": {
+          "type": "object"
+        },
+        "externalDocs": {
+          "$ref": "#/definitions/ExternalDocs"
+        },
+        "properties": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "reference": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      },
+      "discriminator": "type"
+    },
+    "ModelImpl": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Model"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "allowEmptyValue": {
+              "type": "boolean"
+            },
+            "defaultValue": {
+              "type": "object"
+            },
+            "discriminator": {
+              "type": "string"
+            },
+            "enum": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "format": {
+              "type": "string"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "minimum": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            },
+            "required": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "uniqueItems": {
+              "type": "boolean"
+            },
+            "xml": {
+              "$ref": "#/definitions/Xml"
+            }
+          }
+        }
+      ]
     },
     "Multipart": {
       "type": "object",
@@ -2686,6 +3713,17 @@
         }
       }
     },
+    "Namespaces": {
+      "type": "object",
+      "properties": {
+        "prefix": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        }
+      }
+    },
     "Node": {
       "type": "object",
       "properties": {
@@ -2695,6 +3733,63 @@
         "replica": {
           "type": "integer",
           "format": "int32"
+        }
+      }
+    },
+    "Number": {
+      "type": "object"
+    },
+    "NumberSchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Schema"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "OAuth2Definition": {
+      "type": "object",
+      "properties": {
+        "authorizationGrants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "authorizationUrl": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "flow": {
+          "type": "string"
+        },
+        "refreshUrl": {
+          "type": "string"
+        },
+        "scopes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "securitySchemeDescriptor": {
+          "$ref": "#/definitions/SecuritySchemeDescriptor"
+        },
+        "tokenUrl": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         }
       }
     },
@@ -2741,6 +3836,207 @@
         }
       }
     },
+    "OAuthFlows": {
+      "type": "object",
+      "properties": {
+        "authorizationCode": {
+          "$ref": "#/definitions/OAuth2Definition"
+        },
+        "clientCredentials": {
+          "$ref": "#/definitions/OAuth2Definition"
+        },
+        "implicit": {
+          "$ref": "#/definitions/OAuth2Definition"
+        },
+        "password": {
+          "$ref": "#/definitions/OAuth2Definition"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "ODataAPI": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/API"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "actionImports": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/ActionImport"
+              }
+            },
+            "actions": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/EntityType"
+              }
+            },
+            "entitySets": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/EntitySet"
+              }
+            },
+            "entityTypes": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/EntityType"
+              }
+            },
+            "functionImports": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/FunctionImport"
+              }
+            },
+            "functions": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/EntityType"
+              }
+            },
+            "metaDataDocument": {
+              "type": "string"
+            },
+            "odataVersion": {
+              "type": "string"
+            },
+            "serviceDocument": {
+              "type": "string"
+            },
+            "serviceRoot": {
+              "type": "string"
+            },
+            "singletons": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/EntitySet"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ObjectProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/Property"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ObjectSchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Schema"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "Operation": {
+      "type": "object",
+      "properties": {
+        "callbacks": {
+          "description": "An optional, string description, intended to apply to all operations in this path",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Callback"
+          }
+        },
+        "deprecated": {
+          "description": "Declares this operation to be deprecated. Consumers SHOULD refrain from usage of the declared operation. Default value is false",
+          "type": "boolean"
+        },
+        "description": {
+          "description": "A verbose explanation of the operation behavior",
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "externalDocs": {
+          "$ref": "#/definitions/ExternalDocs"
+        },
+        "mockedConditionsBasedCustomResponsesList": {
+          "description": "The list of mocked conditions and it's applicable only for mocked APIs",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MockedConditionsBasedCustomResponse"
+          }
+        },
+        "mockedResponses": {
+          "description": "The list of possible mocked responses as they are returned from executing this operation and it's applicable only for mocked APIs",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/MockedResponse"
+          }
+        },
+        "operationId": {
+          "description": "Unique string used to identify the operation. The id MUST be unique among all operations described in the API. The operationId value is case-sensitive",
+          "type": "string"
+        },
+        "parameters": {
+          "description": "A list of parameters that are applicable for this operation. If a parameter is already defined at the Path Item, the new definition will override it but can never remove it",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Parameter"
+          }
+        },
+        "requestBody": {
+          "$ref": "#/definitions/RequestBody"
+        },
+        "responses": {
+          "description": "The list of possible responses as they are returned from executing this operation",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Response"
+          }
+        },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "description": "A short summary of what the operation does",
+          "type": "string"
+        },
+        "tags": {
+          "description": "A list of tags for API documentation control. Tags can be used for logical grouping of operations by resources or any other qualifier",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
     "OutputStream": {
       "type": "object"
     },
@@ -2761,6 +4057,99 @@
         },
         "packageName": {
           "type": "string"
+        }
+      }
+    },
+    "Parameter": {
+      "type": "object",
+      "properties": {
+        "_enum": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowEmptyValue": {
+          "description": "Sets the ability to pass empty-valued parameters. This is valid only for query parameters and allows sending a parameter with an empty value",
+          "type": "boolean"
+        },
+        "allowReserved": {
+          "description": "Determines whether the parameter value SHOULD allow reserved characters, as defined by RFC3986 :/?#[]@!$\u0026'()*+,;= to be included without percent-encoding. This property only applies to parameters with an in value of query. The default value is false",
+          "type": "boolean"
+        },
+        "content": {
+          "description": "A map containing the representations for the parameter. The key is the media type and the value describes it. The map MUST only contain one entry",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/MediaType"
+          }
+        },
+        "default": {
+          "type": "string"
+        },
+        "deprecated": {
+          "description": "Determines whether this parameter is mandatory. If the parameter location is \"path\", this property is REQUIRED and its value MUST be true. Otherwise, the property MAY be included and its default value is false",
+          "type": "boolean"
+        },
+        "description": {
+          "description": "A brief description of the parameter. This could contain examples of use",
+          "type": "string"
+        },
+        "examples": {
+          "description": "Examples of the media type. Each example SHOULD contain a value in the correct format as specified in the parameter encoding. The examples field is mutually exclusive of the example field. Furthermore, if referencing a schema which contains an example, the examples value SHALL override the example provided by the schema",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Example"
+          }
+        },
+        "explode": {
+          "description": "When this is true, parameter values of type array or object generate separate parameters for each value of the array or key-value pair of the map. For other types of parameters this property has no effect. When style is form, the default value is true. For all other styles, the default value is false",
+          "type": "boolean"
+        },
+        "extendedExample": {
+          "description": "Example of the media type. The example SHOULD match the specified schema and encoding properties if present. The example field is mutually exclusive of the examples field. Furthermore, if referencing a schema which contains an example, the example value SHALL override the example provided by the schema. To represent examples of media types that cannot naturally be represented in JSON or YAML, a string value can contain the example with escaping where necessary",
+          "type": "object"
+        },
+        "get$ref": {
+          "description": "The available paths and operations for the API",
+          "type": "string"
+        },
+        "in": {
+          "description": "The location of the parameter. Possible values are \"query\", \"header\", \"path\" or \"cookie\"",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the parameter. Parameter names are case sensitive",
+          "type": "string"
+        },
+        "parameterSchema": {
+          "$ref": "#/definitions/Schema"
+        },
+        "required": {
+          "description": "Determines whether this parameter is mandatory. If the parameter location is \"path\", this property is REQUIRED and its value MUST be true. Otherwise, the property MAY be included and its default value is false",
+          "type": "boolean"
+        },
+        "style": {
+          "description": "Describes how the parameter value will be serialized depending on the type of the parameter value. Default values (based on value of in): for query - form; for path - simple; for header - simple; for cookie - form",
+          "type": "string",
+          "enum": [
+            "MATRIX",
+            "LABEL",
+            "FORM",
+            "SIMPLE",
+            "SPACEDELIMITED",
+            "PIPEDELIMITED",
+            "DEEPOBJECT"
+          ]
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "xpath": {
+          "$ref": "#/definitions/Xpath"
         }
       }
     },
@@ -2800,6 +4189,138 @@
           "format": "int32"
         }
       }
+    },
+    "Path": {
+      "type": "object",
+      "properties": {
+        "delete": {
+          "$ref": "#/definitions/Operation"
+        },
+        "description": {
+          "description": "An optional, string description, intended to apply to all operations in this path",
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "get": {
+          "$ref": "#/definitions/Operation"
+        },
+        "get$ref": {
+          "description": "Allows for an external definition of this path item",
+          "type": "string"
+        },
+        "head": {
+          "$ref": "#/definitions/Operation"
+        },
+        "options": {
+          "$ref": "#/definitions/Operation"
+        },
+        "parameters": {
+          "description": "A list of parameters that are applicable for all the operations described under this path. These parameters can be overridden at the operation level, but cannot be removed there",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "patch": {
+          "$ref": "#/definitions/Operation"
+        },
+        "post": {
+          "$ref": "#/definitions/Operation"
+        },
+        "put": {
+          "$ref": "#/definitions/Operation"
+        },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "description": "An optional, string summary, intended to apply to all operations in this path",
+          "type": "string"
+        },
+        "tags": {
+          "description": "A list of path level tags for API documentation control. Tags can be used for logical grouping of operations by resources or any other qualifier",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "trace": {
+          "$ref": "#/definitions/Operation"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "PathParameter": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Parameter"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "Property": {
+      "type": "object",
+      "properties": {
+        "access": {
+          "type": "string"
+        },
+        "allowEmptyValue": {
+          "type": "boolean"
+        },
+        "description": {
+          "type": "string"
+        },
+        "example": {
+          "type": "object"
+        },
+        "format": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "position": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "readOnly": {
+          "type": "boolean"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "xml": {
+          "$ref": "#/definitions/Xml"
+        }
+      },
+      "discriminator": "type"
     },
     "PublishPayload": {
       "type": "object",
@@ -2853,6 +4374,567 @@
         }
       }
     },
+    "QueryParameter": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Parameter"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "RefModel": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Model"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "get$ref": {
+              "type": "string"
+            },
+            "refFormat": {
+              "type": "string",
+              "enum": [
+                "URL",
+                "RELATIVE",
+                "INTERNAL"
+              ]
+            },
+            "simpleRef": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "RefParameter": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Parameter"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "RefProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "get$ref": {
+              "type": "string"
+            },
+            "refFormat": {
+              "type": "string",
+              "enum": [
+                "URL",
+                "RELATIVE",
+                "INTERNAL"
+              ]
+            },
+            "simpleRef": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "RequestBody": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "description": "The content of the request body. The key is a media type or media type range and the value describes it",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/MediaType"
+          }
+        },
+        "description": {
+          "description": "A brief description of the request body. This could contain examples of use",
+          "type": "string"
+        },
+        "get$ref": {
+          "type": "string"
+        },
+        "required": {
+          "description": "Determines if the request body is required in the request. Defaults to false",
+          "type": "boolean"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "Response": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "description": "A map containing descriptions of potential response payloads. The key is a media type or media type range and the value describes it",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/MediaType"
+          }
+        },
+        "description": {
+          "description": "A short description of the response",
+          "type": "string"
+        },
+        "get$ref": {
+          "type": "string"
+        },
+        "headersV3": {
+          "description": "Maps a header name to its definition. RFC7230 states header names are case insensitive. If a response header is defined with the name \"Content-Type\", it SHALL be ignored",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Header"
+          }
+        },
+        "links": {
+          "description": "A map of operations links that can be followed from the response. The key of the map is a short name for the link, following the naming constraints of the names for Component Objects.",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Link"
+          }
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "RestAPI": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/API"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "components": {
+              "$ref": "#/definitions/Components"
+            },
+            "externalDocs": {
+              "description": "Additional external documentation",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ExternalDocs"
+              }
+            },
+            "info": {
+              "$ref": "#/definitions/Info"
+            },
+            "paths": {
+              "description": "The available paths and operations for the API",
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/Path"
+              }
+            },
+            "servers": {
+              "description": "An array of Server Objects, which provide connectivity information to a target server",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Server"
+              }
+            },
+            "vendorExtensions": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "RestEnabledPath": {
+      "type": "object",
+      "properties": {
+        "delete": {
+          "$ref": "#/definitions/Operation"
+        },
+        "description": {
+          "description": "An optional, string description, intended to apply to all operations in this path",
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "get": {
+          "$ref": "#/definitions/Operation"
+        },
+        "get$ref": {
+          "description": "Allows for an external definition of this path item",
+          "type": "string"
+        },
+        "head": {
+          "$ref": "#/definitions/Operation"
+        },
+        "invokePath": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "options": {
+          "$ref": "#/definitions/Operation"
+        },
+        "parameters": {
+          "description": "A list of parameters that are applicable for all the operations described under this path. These parameters can be overridden at the operation level, but cannot be removed there",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "patch": {
+          "$ref": "#/definitions/Operation"
+        },
+        "post": {
+          "$ref": "#/definitions/Operation"
+        },
+        "put": {
+          "$ref": "#/definitions/Operation"
+        },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "description": "An optional, string summary, intended to apply to all operations in this path",
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "trace": {
+          "$ref": "#/definitions/Operation"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "SOAPAPI": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/API"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "baseWsdlUri": {
+              "type": "string"
+            },
+            "isRESTInvokeEnabled": {
+              "type": "boolean"
+            },
+            "nativeUri": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "operationPolicies": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "operationsInfo": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/definitions/SOAPOperation"
+              }
+            },
+            "primaryEndpoint": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "boolean"
+              }
+            },
+            "rootFileFolder": {
+              "type": "string"
+            },
+            "serviceName": {
+              "type": "string"
+            },
+            "wsdl": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "SOAPBinding": {
+      "type": "object",
+      "properties": {
+        "faultMessages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inputMessage": {
+          "type": "string"
+        },
+        "interFace": {
+          "$ref": "#/definitions/SOAPInterface"
+        },
+        "name": {
+          "type": "string"
+        },
+        "outputMessage": {
+          "type": "string"
+        },
+        "specifier": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "SOAPInterface": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SOAPOperation"
+          }
+        }
+      }
+    },
+    "SOAPOperation": {
+      "type": "object",
+      "properties": {
+        "bindings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SOAPBinding"
+          }
+        },
+        "defined": {
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "isRESTInvokeEnabled": {
+          "type": "boolean"
+        },
+        "mockedConditionsBasedCustomResponsesList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MockedConditionsBasedCustomResponse"
+          }
+        },
+        "mockedResponses": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/MockedResponse"
+          }
+        },
+        "name": {
+          "type": "string"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "restEnabledPath": {
+          "$ref": "#/definitions/RestEnabledPath"
+        },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "soapAction": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Schema": {
+      "type": "object",
+      "properties": {
+        "additionalProperties": {
+          "$ref": "#/definitions/Schema"
+        },
+        "default": {
+          "description": "The default value represents what would be assumed by the consumer of the input as the value of the schema if one is not provided. Unlike JSON Schema, the value MUST conform to the defined type for the Schema Object defined at the same level. For example, if type is string, then default can be \"foo\" but cannot be 1",
+          "type": "object"
+        },
+        "deprecated": {
+          "description": "Specifies that a schema is deprecated and SHOULD be transitioned out of usage. Default value is false",
+          "type": "boolean"
+        },
+        "description": {
+          "description": "Provide a more lengthy explanation about the purpose of the data described by the schema",
+          "type": "string"
+        },
+        "enum": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "example": {
+          "description": "A free-form property to include an example of an instance for this schema. To represent examples that cannot be naturally represented in JSON or YAML, a string value can be used to contain the example with escaping where necessary",
+          "type": "object"
+        },
+        "exclusiveMaximum": {
+          "description": "Indicate whether maximum are exclusive of the value",
+          "type": "boolean"
+        },
+        "exclusiveMinimum": {
+          "description": "Indicate whether minimum are exclusive of the value",
+          "type": "boolean"
+        },
+        "externalDocs": {
+          "$ref": "#/definitions/ExternalDocs"
+        },
+        "format": {
+          "description": "The format keyword allows for basic semantic validation on certain kinds of string values that are commonly used",
+          "type": "string"
+        },
+        "maxItems": {
+          "description": "The maximum length of the array can be specified",
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxLength": {
+          "description": "The maximum length of a string can be constrained using the minLength",
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxProperties": {
+          "description": "The maximum number of properties on an object can be restricted",
+          "type": "integer",
+          "format": "int32"
+        },
+        "maximum": {
+          "description": "Upper limit in the ranges of numbers, (or exclusiveMinimum and exclusiveMaximum for expressing exclusive range)",
+          "type": "number"
+        },
+        "minItems": {
+          "description": "The minimum length of the array can be specified",
+          "type": "integer",
+          "format": "int32"
+        },
+        "minLength": {
+          "description": "The minimum length of a string can be constrained using the minLength",
+          "type": "integer",
+          "format": "int32"
+        },
+        "minProperties": {
+          "description": "The minimum number of properties on an object can be restricted",
+          "type": "integer",
+          "format": "int32"
+        },
+        "minimum": {
+          "description": "Lower limit in the ranges of numbers",
+          "type": "number"
+        },
+        "multipleOf": {
+          "description": "Numbers can be restricted to a multiple of a given number, using the multipleOf keyword. It may be set to any positive number.",
+          "type": "number"
+        },
+        "name": {
+          "description": "User defined name for the property",
+          "type": "string"
+        },
+        "not": {
+          "$ref": "#/definitions/Schema"
+        },
+        "nullable": {
+          "description": "Allows sending a null value for the defined schema. Default value is false",
+          "type": "boolean"
+        },
+        "pattern": {
+          "description": "The pattern keyword is used to restrict a string to a particular regular expression. The regular expression syntax is the one defined in JavaScript (ECMA 262 specifically)",
+          "type": "string"
+        },
+        "properties": {
+          "description": "The properties (key-value pairs) on an object are defined using the properties keyword. The value of properties is an object, where each key is the name of a property and each value is of type schema used to validate that property",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Schema"
+          }
+        },
+        "readOnly": {
+          "description": "Relevant only for Schema \"properties\" definitions. Declares the property as \"read only\". This means that it MAY be sent as part of a response but SHOULD NOT be sent as part of the request. If the property is marked as readOnly being true and is in the required list, the required will take effect on the response only. A property MUST NOT be marked as both readOnly and writeOnly being true. Default value is false",
+          "type": "boolean"
+        },
+        "required": {
+          "description": "By default, the properties defined by the properties keyword are not required. However, one can provide a list of required properties using the required keyword.\nThe required keyword takes an array of zero or more strings. Each of these strings must be unique.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "title": {
+          "description": "User defined title for the property",
+          "type": "string"
+        },
+        "type": {
+          "description": "It specifies the data type for a schema",
+          "type": "string"
+        },
+        "uniqueItems": {
+          "description": "A schema can ensure that each of the items in an array is unique. Simply set the uniqueItems keyword to true",
+          "type": "boolean"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "writeOnly": {
+          "description": "Relevant only for Schema \"properties\" definitions. Declares the property as \"write only\". Therefore, it MAY be sent as part of a request but SHOULD NOT be sent as part of the response. If the property is marked as writeOnly being true and is in the required list, the required will take effect on the request only. A property MUST NOT be marked as both readOnly and writeOnly being true. Default value is false",
+          "type": "boolean"
+        },
+        "xml": {
+          "$ref": "#/definitions/Xml"
+        }
+      },
+      "discriminator": "type"
+    },
     "Scope": {
       "type": "object",
       "properties": {
@@ -2901,6 +4983,128 @@
         },
         "scope": {
           "$ref": "#/definitions/Scope"
+        }
+      }
+    },
+    "SecurityScheme": {
+      "type": "object",
+      "properties": {
+        "bearerFormat": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "flows": {
+          "$ref": "#/definitions/OAuthFlows"
+        },
+        "get$ref": {
+          "type": "string"
+        },
+        "in": {
+          "type": "string",
+          "enum": [
+            "COOKIE",
+            "HEADER",
+            "QUERY"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "openIdConnectUrl": {
+          "type": "string"
+        },
+        "scheme": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "APIKEY",
+            "HTTP",
+            "OAUTH2",
+            "OPENIDCONNECT"
+          ]
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "SecuritySchemeDescriptor": {
+      "type": "object",
+      "properties": {
+        "headers": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "queryParameters": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "responses": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "Server": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "An optional string describing the host designated by the URL",
+          "type": "string"
+        },
+        "url": {
+          "description": "A URL to the target host. This URL supports Server Variables and MAY be relative, to indicate that the host location is relative to the location where the OpenAPI document is being served. Variable substitutions will be made when a variable is named in {brackets}",
+          "type": "string"
+        },
+        "variables": {
+          "description": "A map between a variable name and its value. The value is used for substitution in the server's URL template",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/ServerVariable"
+          }
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "ServerVariable": {
+      "type": "object",
+      "properties": {
+        "default": {
+          "type": "string"
+        },
+        "description": {
+          "description": "An optional description for the server variable",
+          "type": "string"
+        },
+        "enum": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
         }
       }
     },
@@ -3039,6 +5243,78 @@
         }
       }
     },
+    "StringProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "default": {
+              "type": "string"
+            },
+            "enum": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "maxLength": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "minLength": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "pattern": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "StringSchema": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Schema"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "StringSchemaModel": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Model"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "StringSchemaProperty": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Property"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
     "Tag": {
       "type": "object",
       "properties": {
@@ -3130,6 +5406,94 @@
           "type": "string"
         },
         "versionNumber": {
+          "type": "string"
+        }
+      }
+    },
+    "WebsocketAPI": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/API"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "externalDocs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ExternalDocs"
+              }
+            },
+            "messages": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/MessageFrame"
+              }
+            },
+            "nativeUri": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "parameters": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/AbstractParameter"
+              }
+            },
+            "supportedSubProtocols": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Xml": {
+      "type": "object",
+      "properties": {
+        "attribute": {
+          "description": "Declares whether the property definition translates to an attribute instead of an element. Default value is false",
+          "type": "boolean"
+        },
+        "name": {
+          "description": "Replaces the name of the element/attribute used for the described schema property. When defined within items, it will affect the name of the individual XML elements within the list. When defined alongside type being array (outside the items), it will affect the wrapping element and only if wrapped is true. If wrapped is false, it will be ignored",
+          "type": "string"
+        },
+        "namespace": {
+          "description": "The URI of the namespace definition",
+          "type": "string"
+        },
+        "prefix": {
+          "description": "The prefix to be used for the name",
+          "type": "string"
+        },
+        "vendorExtensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "wrapped": {
+          "description": "MAY be used only for an array definition. Signifies whether the array is wrapped (for example, \u003cbooks\u003e\u003cbook/\u003e\u003cbook/\u003e\u003c/books\u003e) or unwrapped (\u003cbook/\u003e\u003cbook/\u003e). Default value is false",
+          "type": "boolean"
+        }
+      }
+    },
+    "Xpath": {
+      "type": "object",
+      "properties": {
+        "namespaces": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Namespaces"
+          }
+        },
+        "xpath": {
           "type": "string"
         }
       }
